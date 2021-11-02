@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"go.uber.org/goleak/internal/stack"
+	"github.com/ting-playground/goleak/internal/stack"
 )
 
 // Option lets users specify custom verifications.

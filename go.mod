@@ -1,4 +1,4 @@
-module go.uber.org/goleak
+module github.com/ting-playground/goleak
 
 go 1.13
 

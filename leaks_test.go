@@ -46,7 +46,7 @@ func TestFind(t *testing.T) {
 	err := Find(testOptions())
 	require.Error(t, err, "Should find leaks with leaked goroutine")
 	assert.Contains(t, err.Error(), "blockedG")
-	assert.Contains(t, err.Error(), "created by go.uber.org/goleak.startBlockedG")
+	assert.Contains(t, err.Error(), "created by github.com/ting-playground/goleak.startBlockedG")
 
 	// Once we unblock the goroutine, we shouldn't have leaks.
 	bg.unblock()

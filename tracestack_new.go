@@ -26,7 +26,7 @@ package goleak
 import (
 	"strings"
 
-	"go.uber.org/goleak/internal/stack"
+	"github.com/ting-playground/goleak/internal/stack"
 )
 
 func isTraceStack(s stack.Stack) bool {

@@ -78,7 +78,7 @@ func TestCurrent(t *testing.T) {
 	got := Current()
 	assert.NotZero(t, got.ID(), "Should get non-zero goroutine id")
 	assert.Equal(t, "running", got.State())
-	assert.Equal(t, "go.uber.org/goleak/internal/stack.getStackBuffer", got.FirstFunction())
+	assert.Equal(t, "github.com/ting-playground/goleak/internal/stack.getStackBuffer", got.FirstFunction())
 
 	wantFrames := []string{
 		"stack.getStackBuffer",
